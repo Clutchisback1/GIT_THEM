@@ -1,6 +1,6 @@
 #Downloads just about all of the github goodies I like...
 
-echo 'GET THEM!!!!'
+echo 'GIT THEM!!!!'
 cat << "EOF"
                                                                 `.-/+oosssssssso:`
                                                           `-/+osyysssssyyyyyysoosyy+.
