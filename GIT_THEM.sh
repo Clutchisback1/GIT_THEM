@@ -93,5 +93,7 @@ git clone https://github.com/1N3/Sn1per.git
 git clone https://github.com/SpiderLabs/Responder.git
 git clone https://github.com/byt3bl33d3r/CrackMapExec.git
 git clone https://github.com/rebootuser/LinEnum.git
+git clone https://github.com/nccgroup/redsnarf.git
+https://github.com/BloodHoundAD/BloodHound.git
 
 echo 'start Pwning...'
