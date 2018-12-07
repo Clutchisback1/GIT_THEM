@@ -70,6 +70,11 @@ cat << "EOF"
                                                        `-/ossssso++++ossyyo:`
 EOF
 
+# I like to save everything in /etc/github so change this if youre a normal human being
+
+mkdir /etc/github/
+cd /etc/github
+
 git clone https://github.com/D35m0nd142/LFISuite.git
 git clone https://github.com/linted/linuxprivchecker.git
 git clone https://github.com/m4ll0k/WAScan.git
@@ -94,6 +99,6 @@ git clone https://github.com/SpiderLabs/Responder.git
 git clone https://github.com/byt3bl33d3r/CrackMapExec.git
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/nccgroup/redsnarf.git
-https://github.com/BloodHoundAD/BloodHound.git
+git clone https://github.com/BloodHoundAD/BloodHound.git
 
 echo 'start Pwning...'
