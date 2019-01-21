@@ -100,5 +100,6 @@ git clone https://github.com/byt3bl33d3r/CrackMapExec.git
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/nccgroup/redsnarf.git
 git clone https://github.com/BloodHoundAD/BloodHound.git
+git clone https://github.com/Rev3rseSecurity/WebMap.git
 
 echo 'start Pwning...'
