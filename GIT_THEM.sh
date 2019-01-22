@@ -101,5 +101,6 @@ git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/nccgroup/redsnarf.git
 git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/Rev3rseSecurity/WebMap.git
+git clone https://github.com/DanMcInerney/icebreaker.git
 
 echo 'start Pwning...'
