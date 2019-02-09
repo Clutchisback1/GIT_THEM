@@ -103,4 +103,9 @@ git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/DanMcInerney/icebreaker.git
 
+# Install ZSH
+
+apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo 'start Pwning...'
