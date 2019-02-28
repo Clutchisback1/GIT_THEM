@@ -103,9 +103,20 @@ git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/DanMcInerney/icebreaker.git
 
+# Terminals
+
 # Install ZSH
+sudo apt install zsh
+# uncomment to fully install ZSH
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Install Fish
+pip install fish
+sudo curl -L https://get.oh-my.fish > install
+sudo fish install --path=~/.local/share/omf --config=~/.config/omf
 
-echo 'start Pwning...'
+# Install Fish Theme
+omf theme cmorrell
+
+
+echo 'start Pwning...don\'t get Beefhooked!'
