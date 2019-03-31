@@ -1,4 +1,6 @@
 #Downloads just about all of the github goodies I like...
+#Sometimes clients dont like to give access to the internal device so one must use proxychains to donwload everything
+#This file uses proxychains to GIT THEM all!
 
 echo 'GIT THEM!!!!'
 cat << "EOF"
