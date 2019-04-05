@@ -106,7 +106,7 @@ git clone https://github.com/DanMcInerney/icebreaker.git
 # Terminals
 
 # Install ZSH
-sudo apt install zsh
+# sudo apt install zsh
 # uncomment to fully install ZSH
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
