@@ -111,12 +111,22 @@ git clone https://github.com/DanMcInerney/icebreaker.git
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Fish
-pip install fish
+apt-get install fish
 sudo curl -L https://get.oh-my.fish > install
-sudo fish install --path=~/.local/share/omf --config=~/.config/omf
+omf install batman
 
 # Install Fish Theme
-omf theme cmorrell
+omf install batman
+#omf theme cmorrell
 
+cat << "EOF"
+ ________________________________________
+< Start Pwning and don't get Beefhooked! >
+ ----------------------------------------
+        \   ^__^
+         \  (^^)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 
-echo 'start Pwning...don\'t get Beefhooked!'
+EOF
