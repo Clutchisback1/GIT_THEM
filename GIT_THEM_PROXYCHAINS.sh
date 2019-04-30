@@ -98,12 +98,17 @@ proxychains git clone https://github.com/zerosum0x0/koadic.git
 proxychains git clone https://github.com/D4Vinci/Cr3dOv3r.git
 proxychains git clone https://github.com/1N3/Sn1per.git
 proxychains git clone https://github.com/SpiderLabs/Responder.git
-proxychains git clone https://github.com/byt3bl33d3r/CrackMapExec.git
 proxychains git clone https://github.com/rebootuser/LinEnum.git
 proxychains git clone https://github.com/nccgroup/redsnarf.git
 proxychains git clone https://github.com/BloodHoundAD/BloodHound.git
 proxychains git clone https://github.com/Rev3rseSecurity/WebMap.git
 proxychains git clone https://github.com/DanMcInerney/icebreaker.git
+
+# Install Crackmapexec Bleeding Edge
+
+proxychains apt-get install -y libssl-dev libffi-dev python-dev build-essential
+proxychains git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
+proxychains python /etc/github/CrackMapExec/setup.py install
 
 # Terminals
 
@@ -117,11 +122,11 @@ proxychains apt-get install fish
 
 # with git
 proxychains git clone https://github.com/oh-my-fish/oh-my-fish
-cd oh-my-fish
+cd /etc/github/oh-my-fish
 proxychains bin/install --offline
 
 # Install Fish Theme
-proxychains omf theme cmorrell
+omf theme batman
 
 
 echo 'start Pwning...don\'t get Beefhooked!'
