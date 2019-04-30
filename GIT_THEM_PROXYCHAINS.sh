@@ -129,4 +129,15 @@ proxychains bin/install --offline
 omf theme batman
 
 
-echo 'start Pwning...don\'t get Beefhooked!'
+# COWSAYYYY!!!!
+cat << "EOF"
+ ________________________________________
+< Start Pwning and don't get Beefhooked! >
+ ----------------------------------------
+        \   ^__^
+         \  (^^)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+EOF
