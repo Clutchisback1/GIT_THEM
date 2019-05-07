@@ -117,7 +117,7 @@ python /etc/github/CrackMapExec/setup.py install
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Fish
-apt-get install fish
+apt-get install fish -y
 sudo curl -L https://get.oh-my.fish > install
 omf install batman
 
