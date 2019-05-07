@@ -118,7 +118,7 @@ proxychains python /etc/github/CrackMapExec/setup.py install
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Fish
-proxychains apt-get install fish
+proxychains apt-get install fish -y
 
 # with git
 proxychains git clone https://github.com/oh-my-fish/oh-my-fish
