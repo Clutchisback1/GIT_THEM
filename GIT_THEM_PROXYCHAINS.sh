@@ -103,6 +103,8 @@ proxychains git clone https://github.com/nccgroup/redsnarf.git
 proxychains git clone https://github.com/BloodHoundAD/BloodHound.git
 proxychains git clone https://github.com/Rev3rseSecurity/WebMap.git
 proxychains git clone https://github.com/DanMcInerney/icebreaker.git
+proxychains git clone https://github.com/oh-my-fish/oh-my-fish
+
 
 # Install Crackmapexec Bleeding Edge
 
@@ -118,10 +120,10 @@ proxychains python /etc/github/CrackMapExec/setup.py install
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Fish
+proxychains apt-get update -y
 proxychains apt-get install fish -y
 
 # with git
-proxychains git clone https://github.com/oh-my-fish/oh-my-fish
 cd /etc/github/oh-my-fish
 proxychains bin/install --offline
 
@@ -131,6 +133,9 @@ omf theme batman
 
 # COWSAYYYY!!!!
 cat << "EOF"
+
+
+
  ________________________________________
 < Start Pwning and don't get Beefhooked! >
  ----------------------------------------
