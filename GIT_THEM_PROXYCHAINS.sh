@@ -104,7 +104,7 @@ proxychains git clone https://github.com/BloodHoundAD/BloodHound.git
 proxychains git clone https://github.com/Rev3rseSecurity/WebMap.git
 proxychains git clone https://github.com/DanMcInerney/icebreaker.git
 proxychains git clone https://github.com/oh-my-fish/oh-my-fish
-
+proxychains git clone https://github.com/fox-it/mitm6.git
 
 # Install Crackmapexec Bleeding Edge
 
