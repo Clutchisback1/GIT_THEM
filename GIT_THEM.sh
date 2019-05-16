@@ -101,6 +101,7 @@ git clone https://github.com/nccgroup/redsnarf.git
 git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/DanMcInerney/icebreaker.git
+git clone https://github.com/fox-it/mitm6.git
 
 # Install Crackmapexec Bleeding Edge
 
