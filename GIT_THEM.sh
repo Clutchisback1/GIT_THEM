@@ -75,6 +75,7 @@ EOF
 mkdir /etc/github/
 cd /etc/github
 
+git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/D35m0nd142/LFISuite.git
 git clone https://github.com/linted/linuxprivchecker.git
 git clone https://github.com/m4ll0k/WAScan.git
@@ -99,15 +100,15 @@ git clone https://github.com/SpiderLabs/Responder.git
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/nccgroup/redsnarf.git
 git clone https://github.com/BloodHoundAD/BloodHound.git
-git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/DanMcInerney/icebreaker.git
 git clone https://github.com/fox-it/mitm6.git
+git clone https://github.com/oh-my-fish/oh-my-fish
 
 # Install Crackmapexec Bleeding Edge
 
-apt-get install -y libssl-dev libffi-dev python-dev build-essential
-git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
-python /etc/github/CrackMapExec/setup.py install
+sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
+sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
+sudo python /etc/github/CrackMapExec/setup.py install
 
 
 # Terminals
@@ -118,9 +119,12 @@ python /etc/github/CrackMapExec/setup.py install
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Fish
-apt-get install fish -y
-sudo curl -L https://get.oh-my.fish > install
+sudo apt-get install fish -y
+/etc/github/oh-my-fish/bin/install --offline
 omf install batman
+
+# Backup Fish Installation Command
+#sudo curl -L https://get.oh-my.fish > install
 
 # Install Fish Theme
 omf install batman
