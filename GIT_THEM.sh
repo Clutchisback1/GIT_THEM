@@ -103,6 +103,7 @@ git clone https://github.com/BloodHoundAD/BloodHound.git
 git clone https://github.com/DanMcInerney/icebreaker.git
 git clone https://github.com/fox-it/mitm6.git
 git clone https://github.com/oh-my-fish/oh-my-fish
+git clone https://github.com/SecureAuthCorp/impacket.git
 
 # Install Crackmapexec Bleeding Edge
 
