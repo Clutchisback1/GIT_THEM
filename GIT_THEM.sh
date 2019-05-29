@@ -104,9 +104,28 @@ git clone https://github.com/DanMcInerney/icebreaker.git
 git clone https://github.com/fox-it/mitm6.git
 git clone https://github.com/oh-my-fish/oh-my-fish
 git clone https://github.com/SecureAuthCorp/impacket.git
+git clone https://github.com/mdsecactivebreach/SharpShooter
+git clone https://github.com/nccgroup/demiguise.git
+git clone https://github.com/Ne0nd0g/merlin.git
+git clone https://github.com/n00py/bhg.git
+
+
+
+# Update Apt
+sudo apt-get update
+
+# Install Cowsay and lolcats (#Priorities)
+sudo apt-get install cowsay -y
+sudo apt-get install lolcat -y
+
+
+# Install Python3-pip and Python3 Impacket Modules
+sudo apt-get install python3 -y
+sudo apt-get install python3-pip -y
+pip3 install impacket
+
 
 # Install Crackmapexec Bleeding Edge
-
 sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
 sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
 sudo python /etc/github/CrackMapExec/setup.py install
@@ -128,8 +147,10 @@ omf install batman
 #sudo curl -L https://get.oh-my.fish > install
 
 # Install Fish Theme
-omf install batman
+#omf install batman
 #omf theme cmorrell
+
+
 
 cat << "EOF"
  ________________________________________
