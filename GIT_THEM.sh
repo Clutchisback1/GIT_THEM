@@ -108,6 +108,7 @@ git clone https://github.com/mdsecactivebreach/SharpShooter
 git clone https://github.com/nccgroup/demiguise.git
 git clone https://github.com/Ne0nd0g/merlin.git
 git clone https://github.com/n00py/bhg.git
+git clone https://github.com/Ekultek/BlueKeep.git
 
 
 
@@ -131,7 +132,7 @@ sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
 sudo python /etc/github/CrackMapExec/setup.py install
 
 
-# Terminals
+#### Terminals####
 
 # Install ZSH
 # sudo apt install zsh
