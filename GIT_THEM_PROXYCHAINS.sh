@@ -77,6 +77,7 @@ EOF
 mkdir /etc/github/
 cd /etc/github
 
+proxychains git clone https://github.com/Rev3rseSecurity/WebMap.git
 proxychains git clone https://github.com/D35m0nd142/LFISuite.git
 proxychains git clone https://github.com/linted/linuxprivchecker.git
 proxychains git clone https://github.com/m4ll0k/WAScan.git
@@ -101,34 +102,54 @@ proxychains git clone https://github.com/SpiderLabs/Responder.git
 proxychains git clone https://github.com/rebootuser/LinEnum.git
 proxychains git clone https://github.com/nccgroup/redsnarf.git
 proxychains git clone https://github.com/BloodHoundAD/BloodHound.git
-proxychains git clone https://github.com/Rev3rseSecurity/WebMap.git
 proxychains git clone https://github.com/DanMcInerney/icebreaker.git
-proxychains git clone https://github.com/oh-my-fish/oh-my-fish
 proxychains git clone https://github.com/fox-it/mitm6.git
+proxychains git clone https://github.com/oh-my-fish/oh-my-fish
+proxychains git clone https://github.com/SecureAuthCorp/impacket.git
+proxychains git clone https://github.com/mdsecactivebreach/SharpShooter
+proxychains git clone https://github.com/nccgroup/demiguise.git
+proxychains git clone https://github.com/Ne0nd0g/merlin.git
+proxychains git clone https://github.com/n00py/bhg.git
+proxychains git clone https://github.com/Ekultek/BlueKeep.git
+
+
+# Update Apt
+sudo proxychains apt-get update
+
+# Install Cowsay and lolcats (#Priorities)
+sudo proxychains apt-get install cowsay -y
+sudo proxychains apt-get install lolcat -y
+
+
+# Install Python3-pip and Python3 Impacket Modules
+sudo proxychains apt-get install python3 -y
+sudo proxychains apt-get install python3-pip -y
+pip3 proxychains install impacket
+
 
 # Install Crackmapexec Bleeding Edge
+sudo proxychains apt-get install -y libssl-dev libffi-dev python-dev build-essential
+sudo proxychains git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
+sudo proxychains python /etc/github/CrackMapExec/setup.py install
 
-proxychains apt-get install -y libssl-dev libffi-dev python-dev build-essential
-proxychains git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
-proxychains python /etc/github/CrackMapExec/setup.py install
 
-# Terminals
-
-# Install ZSH
-#sudo apt install zsh
-# uncomment to fully install ZSH
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+### Terminals###
 
 # Install Fish
 proxychains apt-get update -y
 proxychains apt-get install fish -y
-
-# with git
 cd /etc/github/oh-my-fish
-proxychains bin/install --offline
+bin/install --offline
 
 # Install Fish Theme
 omf theme batman
+
+
+# Install ZSH if you like
+#sudo apt install zsh
+# uncomment to fully install ZSH
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 
 # COWSAYYYY!!!!
