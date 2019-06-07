@@ -129,6 +129,7 @@ pip3 install impacket
 # Install Crackmapexec Bleeding Edge
 sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
 sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
+sudo pip install -r /etc/github/CrackMapExec/requirements.txt
 sudo python /etc/github/CrackMapExec/setup.py install
 
 
