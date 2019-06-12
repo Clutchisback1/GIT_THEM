@@ -75,6 +75,8 @@ EOF
 mkdir /etc/github/
 cd /etc/github
 
+#Github Stuff
+
 git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/D35m0nd142/LFISuite.git
 git clone https://github.com/linted/linuxprivchecker.git
@@ -110,6 +112,9 @@ git clone https://github.com/Ne0nd0g/merlin.git
 git clone https://github.com/n00py/bhg.git
 git clone https://github.com/Ekultek/BlueKeep.git
 
+
+# Arachni
+wget https://github.com/Arachni/arachni/releases/download/v1.5.1/arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
 
 
 # Update Apt
