@@ -111,6 +111,14 @@ proxychains git clone https://github.com/nccgroup/demiguise.git
 proxychains git clone https://github.com/Ne0nd0g/merlin.git
 proxychains git clone https://github.com/n00py/bhg.git
 proxychains git clone https://github.com/Ekultek/BlueKeep.git
+proxychains git clone https://github.com/n00py/WPForce.git
+proxychains git clone https://github.com/mradarsh/WebMap.git
+proxychains git clone https://github.com/Coalfire-Research/Slackor.git
+proxychains git clone https://github.com/Veil-Framework/Veil.git
+proxychains git clone https://github.com/OJ/gobuster.git
+proxychains git clone https://github.com/NetSPI/PowerUpSQL.git
+proxychains git clone https://github.com/m4ll0k/WPSeku.git
+
 
 
 # Update Apt
