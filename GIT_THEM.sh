@@ -77,7 +77,6 @@ cd /etc/github
 
 #Github Stuff
 
-git clone https://github.com/Rev3rseSecurity/WebMap.git
 git clone https://github.com/D35m0nd142/LFISuite.git
 git clone https://github.com/linted/linuxprivchecker.git
 git clone https://github.com/m4ll0k/WAScan.git
@@ -111,6 +110,14 @@ git clone https://github.com/nccgroup/demiguise.git
 git clone https://github.com/Ne0nd0g/merlin.git
 git clone https://github.com/n00py/bhg.git
 git clone https://github.com/Ekultek/BlueKeep.git
+git clone https://github.com/n00py/WPForce.git
+git clone https://github.com/mradarsh/WebMap.git
+git clone https://github.com/Coalfire-Research/Slackor.git
+git clone https://github.com/Veil-Framework/Veil.git
+git clone https://github.com/OJ/gobuster.git
+git clone https://github.com/NetSPI/PowerUpSQL.git
+git clone https://github.com/m4ll0k/WPSeku.git
+
 
 
 # Arachni
