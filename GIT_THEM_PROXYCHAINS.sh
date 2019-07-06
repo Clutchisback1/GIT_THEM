@@ -118,7 +118,7 @@ proxychains git clone https://github.com/Veil-Framework/Veil.git
 proxychains git clone https://github.com/OJ/gobuster.git
 proxychains git clone https://github.com/NetSPI/PowerUpSQL.git
 proxychains git clone https://github.com/m4ll0k/WPSeku.git
-
+proxychains git clone https://github.com/trustedsec/unicorn.git
 
 
 # Update Apt
