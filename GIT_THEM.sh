@@ -117,12 +117,13 @@ git clone https://github.com/Veil-Framework/Veil.git
 git clone https://github.com/OJ/gobuster.git
 git clone https://github.com/NetSPI/PowerUpSQL.git
 git clone https://github.com/m4ll0k/WPSeku.git
-
+git clone https://github.com/trustedsec/unicorn.git
 
 
 # Arachni
+cd /etc/github/
 wget https://github.com/Arachni/arachni/releases/download/v1.5.1/arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
-
+tar -xvf arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
 
 # Update Apt
 sudo apt-get update
