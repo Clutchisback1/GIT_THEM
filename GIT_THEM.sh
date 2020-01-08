@@ -123,6 +123,14 @@ git clone https://github.com/TheSecondSun/Bashark.git
 git clone https://github.com/trustedsec/unicorn.git
 git clone https://github.com/Veil-Framework/Veil.git
 git clone https://github.com/zerosum0x0/koadic.git
+git clone https://github.com/Coalfire-Research/DeathMetal.git
+git clone https://github.com/Raikia/UhOh365.git
+git clone https://github.com/EnableSecurity/wafw00f
+git clone https://github.com/dxa4481/truffleHog.git
+git clone https://github.com/NinjaStyle82/bhg.git
+git clone https://github.com/s0md3v/Corsy.git
+git clone https://github.com/zeroSteiner/crimson-forge
+git clone https://github.com/portcullislabs/udp-proto-scanner
 git clone --recurse-submodules https://github.com/cobbr/Covenant
 git clone --recursive https://github.com/eteran/edb-debugger.git
 
