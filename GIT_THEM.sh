@@ -78,6 +78,16 @@ cd /etc/github
 #Github Stuff
 
 git clone https://github.com/mradarsh/WebMap.git
+git clone https://github.com/Hackndo/lsassy.git
+git clone https://github.com/lgandx/PCredz.git
+git clone https://github.com/trustedsec/cve-2019-19781.git
+git clone https://github.com/1N3/IntruderPayloads.git
+git clone https://github.com/portcullislabs/udp-proto-scanner
+git clone https://github.com/ropnop/kerbrute.git
+git clone https://github.com/initstring/linkedin2username.git
+git clone https://github.com/dirkjanm/privexchange/
+git clone https://github.com/nettitude/PoshC2.git
+git clone https://github.com/nettitude/Prowl.git
 git clone https://github.com/1N3/Sn1per.git
 git clone https://github.com/archerysec/archerysec.git
 git clone https://github.com/BloodHoundAD/BloodHound.git
