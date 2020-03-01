@@ -78,6 +78,9 @@ cd /etc/github
 #Github Stuff
 
 git clone https://github.com/mradarsh/WebMap.git
+git clone https://github.com/axiros/terminal_markdown_viewer.git
+git clone https://github.com/PowerShellMafia/PowerSploit
+git clone https://github.com/Hackplayers/evil-winrm
 git clone https://github.com/Hackndo/lsassy.git
 git clone https://github.com/lgandx/PCredz.git
 git clone https://github.com/trustedsec/cve-2019-19781.git
