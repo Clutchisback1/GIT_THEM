@@ -209,16 +209,15 @@ sudo apt-get install fish -y
 
 # Install all requirements and setup files after installing fish
 
-for i in (ls */requirements.txt)                                                         12:58:59
+for i in (ls */requirements.txt)
                  pip3 install -r $i
              end
 
-for i in (ls */setup.py)                                                                 13:02:13
+for i in (ls */setup.py)
                  python3 $i install
              end
 
-
-#### Terminals ####
+#### Additional Terminal Options ####
 
 # Install ZSH
 # sudo apt install zsh
