@@ -75,14 +75,41 @@ EOF
 mkdir /etc/github/
 cd /etc/github
 
-#Github Stuff
+# Update
 
-git clone https://github.com/mradarsh/WebMap.git
-git clone https://github.com/axiros/terminal_markdown_viewer.git
-git clone https://github.com/PowerShellMafia/PowerSploit
+sudo apt-get update
+
+
+# Install Terminator
+
+sudo apt-get install terminator
+
+
+
+# 1337 Modern Tools
+
+
+git clone https://github.com/CCob/SweetPotato.git
+git clone https://github.com/ohpe/juicy-potato.git
+git clone https://github.com/outflanknl/Dumpert.git
 git clone https://github.com/Hackplayers/evil-winrm
 git clone https://github.com/Hackndo/lsassy.git
 git clone https://github.com/lgandx/PCredz.git
+git clone https://github.com/zerosum0x0/koadic.git
+git clone https://github.com/fox-it/BloodHound.py
+git clone https://github.com/risksense/zerologon.git
+git clone https://github.com/skelsec/kerberoast.git
+git clone https://github.com/0xthirteen/SharpRDP.git
+git clone https://github.com/GhostPack/SharpDump.git
+git clone https://github.com/eladshamir/Internal-Monologue.git
+
+
+
+# Github Stuff
+
+git clone https://github.com/navisecdelta/EmailGen.git
+git clone https://github.com/axiros/terminal_markdown_viewer.git
+git clone https://github.com/PowerShellMafia/PowerSploit
 git clone https://github.com/trustedsec/cve-2019-19781.git
 git clone https://github.com/1N3/IntruderPayloads.git
 git clone https://github.com/portcullislabs/udp-proto-scanner
@@ -135,7 +162,6 @@ git clone https://github.com/stealth/sshttp.git
 git clone https://github.com/TheSecondSun/Bashark.git
 git clone https://github.com/trustedsec/unicorn.git
 git clone https://github.com/Veil-Framework/Veil.git
-git clone https://github.com/zerosum0x0/koadic.git
 git clone https://github.com/Coalfire-Research/DeathMetal.git
 git clone https://github.com/Raikia/UhOh365.git
 git clone https://github.com/EnableSecurity/wafw00f
@@ -144,6 +170,7 @@ git clone https://github.com/NinjaStyle82/bhg.git
 git clone https://github.com/s0md3v/Corsy.git
 git clone https://github.com/zeroSteiner/crimson-forge
 git clone https://github.com/portcullislabs/udp-proto-scanner
+git clone https://github.com/danielmiessler/SecLists.git
 git clone --recurse-submodules https://github.com/cobbr/Covenant
 git clone --recursive https://github.com/eteran/edb-debugger.git
 
@@ -152,9 +179,7 @@ git clone --recursive https://github.com/eteran/edb-debugger.git
 cd /etc/github/
 wget https://github.com/Arachni/arachni/releases/download/v1.5.1/arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
 tar -xvf arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
-
-# Update Apt
-sudo apt-get update
+sudo rm arachni-*.tar.gz
 
 # Install Cowsay and lolcats (#Priorities)
 sudo apt-get install cowsay -y
@@ -167,24 +192,40 @@ sudo apt-get install python3-pip -y
 pip3 install impacket
 
 
-# Install Crackmapexec Bleeding Edge
-sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
-sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
-sudo pip install -r /etc/github/CrackMapExec/requirements.txt
-sudo python /etc/github/CrackMapExec/setup.py install
+# Install Crackmapexec Bleeding Edge - Uncomment if needed
+
+#sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
+#sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
+#sudo pip install -r /etc/github/CrackMapExec/requirements.txt
+#sudo python /etc/github/CrackMapExec/setup.py install
 
 
-#### Terminals####
+# Install Fish
+sudo apt-get install fish -y
+/etc/github/oh-my-fish/bin/install --offline
+# omf install batman
+
+
+
+# Install all requirements and setup files after installing fish
+
+for i in (ls */requirements.txt)                                                         12:58:59
+                 pip3 install -r $i
+             end
+
+for i in (ls */setup.py)                                                                 13:02:13
+                 python3 $i install
+             end
+
+
+#### Terminals ####
 
 # Install ZSH
 # sudo apt install zsh
 # uncomment to fully install ZSH
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install Fish
-sudo apt-get install fish -y
-/etc/github/oh-my-fish/bin/install --offline
-omf install batman
+
 
 # Backup Fish Installation Command
 #sudo curl -L https://get.oh-my.fish > install
