@@ -192,19 +192,10 @@ sudo apt-get install python3-pip -y
 pip3 install impacket
 
 
-# Install Crackmapexec Bleeding Edge - Uncomment if needed
-
-#sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
-#sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
-#sudo pip install -r /etc/github/CrackMapExec/requirements.txt
-#sudo python /etc/github/CrackMapExec/setup.py install
-
-
 # Install Fish
 sudo apt-get install fish -y
 /etc/github/oh-my-fish/bin/install --offline
-# omf install batman
-
+omf install batman
 
 
 # Install all requirements and setup files after installing fish
@@ -217,6 +208,20 @@ for i in (ls */setup.py)
                  python3 $i install
              end
 
+
+
+
+
+#### Install Crackmapexec Bleeding Edge ####
+
+#sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
+#sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
+#sudo pip install -r /etc/github/CrackMapExec/requirements.txt
+#sudo python /etc/github/CrackMapExec/setup.py install
+
+
+
+
 #### Additional Terminal Options ####
 
 # Install ZSH
@@ -225,9 +230,8 @@ for i in (ls */setup.py)
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
-
 # Backup Fish Installation Command
-#sudo curl -L https://get.oh-my.fish > install
+# sudo curl -L https://get.oh-my.fish > install
 
 # Install Fish Theme
 #omf install batman
