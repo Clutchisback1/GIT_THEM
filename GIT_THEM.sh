@@ -86,9 +86,11 @@ sudo apt-get install terminator
 
 
 
+
 # 1337 Modern Tools
 
-
+git clone https://gitlab.com/KevinJClark/badrats.git
+git clone https://gitlab.com/KevinJClark/csharptoolbox.git
 git clone https://github.com/CCob/SweetPotato.git
 git clone https://github.com/ohpe/juicy-potato.git
 git clone https://github.com/outflanknl/Dumpert.git
