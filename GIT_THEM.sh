@@ -1,6 +1,6 @@
 #Downloads just about all of the github goodies I like...
 
-echo 'GIT THEM!!!!'
+echo 'GIT THEM!!!! -Shredder' 
 cat << "EOF"
                                                                 `.-/+oosssssssso:`
                                                           `-/+osyysssssyyyyyysoosyy+.
@@ -70,7 +70,7 @@ cat << "EOF"
                                                        `-/ossssso++++ossyyo:`
 EOF
 
-# I like to save everything in /etc/github so change this if youre a normal human being
+# I like to save everything in /etc/github so change this if youre a normal human being...
 
 mkdir /etc/github/
 cd /etc/github
@@ -79,13 +79,9 @@ cd /etc/github
 
 sudo apt-get update
 
-
 # Install Terminator
 
 sudo apt-get install terminator
-
-
-
 
 # 1337 Modern Tools
 
@@ -109,11 +105,9 @@ git clone https://github.com/GhostPack/SharpDump.git
 git clone https://github.com/eladshamir/Internal-Monologue.git
 
 
-
 # Github Stuff
 
 git clone https://github.com/navisecdelta/EmailGen.git
-git clone https://github.com/axiros/terminal_markdown_viewer.git
 git clone https://github.com/PowerShellMafia/PowerSploit
 git clone https://github.com/trustedsec/cve-2019-19781.git
 git clone https://github.com/1N3/IntruderPayloads.git
@@ -125,12 +119,7 @@ git clone https://github.com/Ekultek/BlueKeep.git
 git clone https://github.com/fox-it/mitm6.git
 git clone https://github.com/m4ll0k/WPSeku.git
 git clone https://github.com/maurosoria/dirsearch.git
-git clone https://github.com/mdsecactivebreach/SharpShooter
-git clone https://github.com/n00py/bhg.git
 git clone https://github.com/n00py/WPForce.git
-git clone https://github.com/nccgroup/demiguise.git
-git clone https://github.com/nccgroup/redsnarf.git
-git clone https://github.com/Ne0nd0g/merlin.git
 git clone https://github.com/NetSPI/PowerUpSQL.git
 git clone https://github.com/oh-my-fish/oh-my-fish
 git clone https://github.com/OJ/gobuster.git
@@ -145,12 +134,6 @@ git clone https://github.com/dxa4481/truffleHog.git
 git clone https://github.com/danielmiessler/SecLists.git
 git clone --recurse-submodules https://github.com/cobbr/Covenant
 
-
-# Arachni
-#cd /etc/github/
-#wget https://github.com/Arachni/arachni/releases/download/v1.5.1/arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
-#tar -xvf arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
-#sudo rm arachni-*.tar.gz
 
 # Install Cowsay and lolcats (#Priorities)
 sudo apt-get install cowsay -y
