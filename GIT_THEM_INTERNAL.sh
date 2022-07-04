@@ -80,18 +80,8 @@ cd /etc/github
 sudo apt-get update
 
 
-# Install Terminator
-
-sudo apt-get install terminator
-
-
-
-
 # 1337 Modern Tools
 
-git cloen https://github.com/ly4k/Certipy
-git clone https://github.com/WazeHell/sam-the-admin
-git clone https://github.com/skylerknecht/connect.git
 git clone https://gitlab.com/KevinJClark/badrats.git
 git clone https://gitlab.com/KevinJClark/csharptoolbox.git
 git clone https://github.com/CCob/SweetPotato.git
@@ -107,64 +97,37 @@ git clone https://github.com/skelsec/kerberoast.git
 git clone https://github.com/0xthirteen/SharpRDP.git
 git clone https://github.com/GhostPack/SharpDump.git
 git clone https://github.com/eladshamir/Internal-Monologue.git
+git clone https://github.com/ShutdownRepo/pywhisker.git
+git clone https://github.com/dirkjanm/ldapdomaindump.git
+git clone https://github.com/knavesec/Max.git
+git clone https://github.com/FuzzySecurity/StandIn.git
+git clone https://github.com/WazeHell/sam-the-admin.git
+git clone https://github.com/ly4k/Certipy.git
+git clone https://github.com/skylerknecht/connect.git
 
 
 
-# Github Stuff
+#Github Stuff
 
-git clone https://github.com/navisecdelta/EmailGen.git
-git clone https://github.com/axiros/terminal_markdown_viewer.git
 git clone https://github.com/PowerShellMafia/PowerSploit
-git clone https://github.com/trustedsec/cve-2019-19781.git
-git clone https://github.com/1N3/IntruderPayloads.git
 git clone https://github.com/ropnop/kerbrute.git
-git clone https://github.com/Coalfire-Research/Slackor.git
-git clone https://github.com/cyberheartmi9/PayloadsAllTheThings.git
-git clone https://github.com/D35m0nd142/LFISuite.git
-git clone https://github.com/Ekultek/BlueKeep.git
 git clone https://github.com/fox-it/mitm6.git
-git clone https://github.com/m4ll0k/WPSeku.git
 git clone https://github.com/maurosoria/dirsearch.git
-git clone https://github.com/mdsecactivebreach/SharpShooter
-git clone https://github.com/n00py/bhg.git
-git clone https://github.com/n00py/WPForce.git
-git clone https://github.com/nccgroup/demiguise.git
-git clone https://github.com/nccgroup/redsnarf.git
-git clone https://github.com/Ne0nd0g/merlin.git
 git clone https://github.com/NetSPI/PowerUpSQL.git
 git clone https://github.com/oh-my-fish/oh-my-fish
-git clone https://github.com/OJ/gobuster.git
-git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme.git
-git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/SecureAuthCorp/impacket.git
 git clone https://github.com/SpiderLabs/Responder.git
-git clone https://github.com/TheSecondSun/Bashark.git
-git clone https://github.com/Coalfire-Research/DeathMetal.git
-git clone https://github.com/Raikia/UhOh365.git
-git clone https://github.com/dxa4481/truffleHog.git
 git clone https://github.com/danielmiessler/SecLists.git
-git clone --recurse-submodules https://github.com/cobbr/Covenant
-
-
-# Arachni
-#cd /etc/github/
-#wget https://github.com/Arachni/arachni/releases/download/v1.5.1/arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
-#tar -xvf arachni-1.5.1-0.5.12-linux-x86_64.tar.gz
-#sudo rm arachni-*.tar.gz
 
 # Install Cowsay and lolcats (#Priorities)
 sudo apt-get install cowsay -y
 sudo apt-get install lolcat -y
 
+
 # Install Python3-pip and Python3 Impacket Modules
 sudo apt-get install python3 -y
 sudo apt-get install python3-pip -y
-/usr/bin/python3 -m pip install --upgrade pip -y
 pip3 install impacket
-
-
-# Install Python Requirements
-for i in $(ls */requirements.txt); do pip3 install -r $i; done
 
 
 # Install Fish
@@ -173,12 +136,31 @@ sudo apt-get install fish -y
 omf install batman
 
 
+# Install all requirements and setup files after installing fish
+
+for i in (ls */requirements.txt)
+                 pip3 install -r $i
+             end
+
+for i in (ls */setup.py)
+                 python3 $i install
+             end
+
+
 #### Install Crackmapexec Bleeding Edge ####
 
 #sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
 #sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
 #sudo pip install -r /etc/github/CrackMapExec/requirements.txt
 #sudo python /etc/github/CrackMapExec/setup.py install
+
+#### Additional Terminal Options ####
+
+# Install ZSH
+# sudo apt install zsh
+# uncomment to fully install ZSH
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 # Backup Fish Installation Command
 # sudo curl -L https://get.oh-my.fish > install

@@ -1,3 +1,5 @@
+git clone https://github.com/skelsec/pypykatz
+git clone https://github.com/michenriksen/aquatone.git
 git clone https://github.com/mradarsh/WebMap.git
 git clone https://github.com/1N3/Sn1per.git
 git clone https://github.com/archerysec/archerysec.git
