@@ -86,6 +86,7 @@ sudo apt-get install terminator
 # 1337 Modern Tools
 
 git clone https://github.com/ly4k/Certipy
+git clone https://github.com/topotam/PetitPotam.git
 git clone https://github.com/WazeHell/sam-the-admin
 git clone https://github.com/skylerknecht/connect.git
 git clone https://gitlab.com/KevinJClark/badrats.git
