@@ -85,7 +85,7 @@ sudo apt-get install terminator
 
 # 1337 Modern Tools
 
-git cloen https://github.com/ly4k/Certipy
+git clone https://github.com/ly4k/Certipy
 git clone https://github.com/WazeHell/sam-the-admin
 git clone https://github.com/skylerknecht/connect.git
 git clone https://gitlab.com/KevinJClark/badrats.git
@@ -103,7 +103,6 @@ git clone https://github.com/skelsec/kerberoast.git
 git clone https://github.com/0xthirteen/SharpRDP.git
 git clone https://github.com/GhostPack/SharpDump.git
 git clone https://github.com/eladshamir/Internal-Monologue.git
-
 
 # Github Stuff
 
@@ -132,8 +131,9 @@ git clone https://github.com/Coalfire-Research/DeathMetal.git
 git clone https://github.com/Raikia/UhOh365.git
 git clone https://github.com/dxa4481/truffleHog.git
 git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/insidetrust/statistically-likely-usernames.git
 git clone --recurse-submodules https://github.com/cobbr/Covenant
-
+wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
 
 # Install Cowsay and lolcats (#Priorities)
 sudo apt-get install cowsay -y
