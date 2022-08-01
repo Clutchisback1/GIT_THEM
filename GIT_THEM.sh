@@ -140,6 +140,11 @@ wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_
 sudo apt-get install cowsay -y
 sudo apt-get install lolcat -y
 
+# Install Locate
+sudo apt-get install locate
+updatedb
+
+
 # Install Python3-pip and Python3 Impacket Modules
 sudo apt-get install python3 -y
 sudo apt-get install python3-pip -y
@@ -147,8 +152,14 @@ sudo apt-get install python3-pip -y
 pip3 install impacket
 
 
+# Install service identity for Mitm6
+pip3 install -r service_identity
+
+
 # Install Python Requirements
 for i in $(ls */requirements.txt); do pip3 install -r $i; done
+
+
 
 
 # Install Fish
